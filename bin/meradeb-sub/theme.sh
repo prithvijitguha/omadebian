@@ -107,4 +107,5 @@ if ghostty +list-themes 2>/dev/null | grep -Fxq "$THEME"; then
     "$HOME/.config/ghostty/config"
 fi
 
+source "$MERADEB_PATH/bin/meradeb-sub/set-gnome-theme.sh"
 source "$MERADEB_PATH/bin/meradeb-sub/menu.sh"
