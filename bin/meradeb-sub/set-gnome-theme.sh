@@ -33,7 +33,7 @@ done
 
 while true; do
   BACKGROUND=$(gum choose "${BACKGROUNDS[@]}" "<< Back" --header "Choose your background" --height 12 | tr '[:upper:]' '[:lower:]' | sed 's/ /-/g')
-  if [ -n "$BACKGROUND" ]; then
+  if [ -n "$BACKGROUND" ] && [ "$BACKGROUND" != "<< Back" ]; then
     set_background "$BACKGROUND_DIR/$BACKGROUND"
   elif [ "$BACKGROUND" == "<< Back" ]; then
     break
