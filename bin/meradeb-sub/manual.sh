@@ -2,7 +2,9 @@
 
 cd "$MERADEB_PATH" || exit 1
 
-uv venv
+if [ ! -d ".venv" ] && [ -f ".venv/bin/activate" ]; then
+  uv venv
+fi
 
 source .venv/bin/activate && uv sync --group dev
 
