@@ -36,7 +36,7 @@ echo -e "\nBegin installation (or abort with ctrl+c)..."
 
 echo "Cloning Meradeb..."
 rm -rf ~/.local/share/meradeb
-git clone git@github.com:prithvijitguha/meradeb.git ~/.local/share/meradeb >/dev/null
+git clone git@github.com:prithvijitguha/meradeb.git ~/.local/share/meradeb
 if [[ $MERADEB_REF != "master" ]]; then
   cd ~/.local/share/meradeb
   git fetch origin "${MERADEB_REF:-stable}" && git checkout "${MERADEB_REF:-stable}"
