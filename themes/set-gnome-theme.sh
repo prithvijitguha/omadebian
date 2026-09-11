@@ -32,9 +32,7 @@ for background in "$BACKGROUND_DIR"/*; do
 done
 
 while true; do
-  BACKGROUND=$(printf '%s\n' "${BACKGROUNDS[@]}" |
-    gum choose "Done" --header "Choose your background" --height 12)
-
+  BACKGROUND=$(gum choose "${BACKGROUNDS[@]}" "<< Back" --header "Choose your theme" --height 12)
   [ -z "$BACKGROUND" ] && exit 0
   [ "$BACKGROUND" = "Done" ] && break
 
