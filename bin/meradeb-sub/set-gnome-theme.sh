@@ -36,4 +36,5 @@ if [ -n "$BACKGROUND" ] && [ "$BACKGROUND" != "<< Back" ]; then
   set_background "$BACKGROUND_DIR/$BACKGROUND"
 fi
 
+source "$MERADEB_PATH/bin/meradeb-sub/set-gnome-theme.sh"
 source "$MERADEB_PATH/bin/meradeb-sub/menu.sh"
