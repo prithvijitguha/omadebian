@@ -7,14 +7,10 @@ for theme in "$MERADEB_PATH"/themes/*/colors.toml; do
   THEMES+=("$(basename "$(dirname "$theme")")")
 done
 
-THEME=$(printf '%s\n' "${THEMES[@]}" |
-  sed 's/-/ /g' |
-  gum choose "Back" --header "Choose your theme" --height 12)
+THEME=$(gum choose "${THEMES[@]}" "<< Back" --header "Choose your theme" --height 12 | tr '[:upper:]' '[:lower:]' | sed 's/ /-/g')
 
 [ -n "$THEME" ] || exit 0
 [ "$THEME" = "Back" ] && exit 0
-
-THEME=$(echo "$THEME" | tr '[:upper:]' '[:lower:]' | sed 's/ /-/g')
 
 # Each directory in themes contains a colors.toml
 # We use that colors.toml to generate the tophat and btop files
