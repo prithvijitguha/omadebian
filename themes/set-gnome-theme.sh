@@ -33,8 +33,9 @@ done
 
 while true; do
   BACKGROUND=$(gum choose "${BACKGROUNDS[@]}" "<< Back" --header "Choose your background" --height 12)
-  [ -z "$BACKGROUND" ] && exit 0
-  [ "$BACKGROUND" = "Done" ] && break
-
-  set_background "$BACKGROUND_DIR/$BACKGROUND"
+  if [ -n "$BACKGROUND" ] && [ "$BACKGROUND" != "<<-back" ]; then
+    set_background "$BACKGROUND_DIR/$BACKGROUND"
+  fi
 done
+
+source "$MERADEB_PATH/bin/meradeb-sub/menu.sh"
