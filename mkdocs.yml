@@ -4,7 +4,6 @@ site_dir: docs/build/
 
 nav:
   - Home: index.md
-  - About Meradeb: about_meradeb.md
   - Hotkeys: hotkeys.md
   - Installation Guide: install_guide.md
   - Setting Up Development Environment: setting_up_development_environment.md
