@@ -23,13 +23,13 @@
   ----------------------------------------------------------
   Hotkey                 Action
   ---------------------- -----------------------------------
-  `Alt + Shift + h`      Shift focus to window on left
+  `Super + Shift + h`      Shift focus to window on left
 
-  `Alt + Shift + l`      Shift focus to window on right
+  `Super + Shift + l`      Shift focus to window on right
 
-  `Alt + Shift + j`      Shift focus to window below
+  `Super + Shift + j`      Shift focus to window below
 
-  `Alt + Shift + k`      Shift focus to window above
+  `Super + Shift + k`      Shift focus to window above
 
 `Shift + F11`          Fullscreen
   ----------------------------------------------------------
