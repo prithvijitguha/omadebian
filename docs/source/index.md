@@ -22,3 +22,12 @@ which didn't really seem sensible to me. Overall it seemed like someone who just
 - Added improvements with gnome auto move windows and workspace naming.
 - Removed some gnome extensions and settings from omakub
 - Removed migrations and bloated applications
+
+## Screenshots
+
+![Desktop](static/meradeb.png)
+![Desktop](static/meradeb_2.png)
+![Desktop](static/meradeb_3.png)
+
+To view the docs please check this page
+[https://meradeb.readthedocs.io/en/latest/](https://meradeb.readthedocs.io/en/latest/)
