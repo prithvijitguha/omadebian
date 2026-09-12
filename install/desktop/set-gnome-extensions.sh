@@ -6,13 +6,13 @@ pipx install gnome-extensions-cli --system-site-packages
 wget -O /tmp/tilingshell.zip 'https://github.com/J4KE-B/tilingshell/releases/download/v17.3-dynamic.1/tilingshell@ferrarodomenico.com.zip'
 # Install new extensions
 gnome-extensions install --force /tmp/tilingshell.zip
-gnome-extensions install tactile@lundal.io
-gnome-extensions install just-perfection-desktop@just-perfection
-gnome-extensions install blur-my-shell@aunetx
-gnome-extensions install space-bar@luchrioh
-gnome-extensions install tophat@fflewddur.github.io
-gnome-extensions install auto-move-windows@gnome-shell-extensions.gcampax.github.com
-gnome-extensions install dash-to-dock@micxgx.gmail.com
+gext install tactile@lundal.io
+gext install just-perfection-desktop@just-perfection
+gext install blur-my-shell@aunetx
+gext install space-bar@luchrioh
+gext install tophat@fflewddur.github.io
+gext install auto-move-windows@gnome-shell-extensions.gcampax.github.com
+gext install dash-to-dock@micxgx.gmail.com
 
 # Setup tiling shell
 gnome-extensions enable tilingshell@ferrarodomenico.com
