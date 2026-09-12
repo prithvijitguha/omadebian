@@ -10,7 +10,7 @@
       
       
       
-        <link rel="next" href="about_meradeb/">
+        <link rel="next" href="hotkeys/">
       
       
         
@@ -70,6 +70,11 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
+      
+        
+        <a href="#meradeb" class="md-skip">
+          Skip to content
+        </a>
       
     </div>
     <div data-md-component="announce">
@@ -231,6 +236,26 @@
       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
       
       <a href="." class="md-nav__link md-nav__link--active">
         
@@ -249,6 +274,47 @@
 
       </a>
       
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#differences-between-omakub-and-meradeb" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Differences between Omakub and Meradeb
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#screenshots" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Screenshots
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -260,7 +326,7 @@
   
   
     <li class="md-nav__item">
-      <a href="about_meradeb/" class="md-nav__link">
+      <a href="about_meradeb.md" class="md-nav__link">
         
   
   
@@ -378,6 +444,38 @@
   
   
   
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#differences-between-omakub-and-meradeb" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Differences between Omakub and Meradeb
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#screenshots" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Screenshots
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -394,14 +492,32 @@
 
 
 
-<h1>
-  <img src="https://www.debian.org/logos/openlogo-nd.svg" width="32" style="vertical-align: middle;">
-  Meradeb
-</h1>
-<p>Meradeb(MAY-rah or meh-rah) it translates to \"MY\" and is taken from
-the Hindi word \'mera\'. Its meant to signify a customization of Debian
-for myself and through my vision.</p>
-<p>It is a customized version of Debian(basically Debian + cool dotfiles)</p>
+<h1 id="meradeb">Meradeb</h1>
+<p>Meradeb(MAY-rah or meh-rah) it translates to "MY" and is taken from the Hindi word 'mera'. Its meant to signify a customization of Debian for
+myself and through my vision.</p>
+<p>This repo was forked from the Omakub repo, I discovered Omarchy and Omakub before I discovered who DHH was. <a href="https://davidcel.is/articles/the-dhh-problem">the-dhh-problem</a>. I mainly work with Python and hardly ever heard of anything with Ruby or Rails.</p>
+<p>The reason I chose to fork it from the original was because for some odd reason DHH chose to use Ubuntu, hence the scripts do not
+run natively on Debian which is far superior in every conceivable way.</p>
+<p>He had significant bloat, pre installations with a lot of 'vibe coded' sloppy scripts. He has also used some web development inspired 'migrations'
+which didn't really seem sensible to me. Overall it seemed like someone who just discovered linux and is showing off his new configurations and seeing what it can do. For more I highly recommend this blog. <a href="https://マリウス.com/a-word-on-omarchy/">a-word-on-omarchy</a> (Site and insights are very legit)</p>
+<h2 id="differences-between-omakub-and-meradeb">Differences between Omakub and Meradeb</h2>
+<ul>
+<li>Zellij -&gt; Tmux</li>
+<li>Alacritty -&gt; Ghostty</li>
+<li>Ulauncher -&gt; Wofi</li>
+<li>Kept original hotkeys for apps as much as possible</li>
+<li>Added more themes</li>
+<li>Improvements on menu, installation components and organized scripts.</li>
+<li>Added improvements with gnome auto move windows and workspace naming.</li>
+<li>Removed some gnome extensions and settings from omakub</li>
+<li>Removed migrations and bloated applications</li>
+</ul>
+<h2 id="screenshots">Screenshots</h2>
+<p><img alt="Desktop" src="static/meradeb.png" />
+<img alt="Desktop" src="static/meradeb_2.png" />
+<img alt="Desktop" src="static/meradeb_3.png" /></p>
+<p>To view the docs please check this page
+<a href="https://meradeb.readthedocs.io/en/latest/">https://meradeb.readthedocs.io/en/latest/</a></p>
 
 
 

@@ -9,7 +9,6 @@ cp ~/.local/share/meradeb/configs/.tmux.conf ~/.tmux.conf
 # Use meradeb btop config
 mkdir -p ~/.config/btop/themes
 cp ~/.local/share/meradeb/configs/btop.conf ~/.config/btop/btop.conf
-cp ~/.local/share/meradeb/themes/tokyo-night/btop.theme ~/.config/btop/themes/tokyo-night.theme
 
 # Meradeb integration
 export MERADEB_PATH="$HOME/.local/share/meradeb"
