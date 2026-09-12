@@ -1,5 +1,6 @@
 #!/bin/bash
 
+gum log --structured --level info "Installing gnome hotkeys"
 # Alt+F4 is very cumbersome
 gsettings set org.gnome.desktop.wm.keybindings close "['<Super>w']"
 

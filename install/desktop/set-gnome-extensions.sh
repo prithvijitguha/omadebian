@@ -1,7 +1,8 @@
 #!/bin/bash
 
-pipx install gnome-extensions-cli --system-site-packages
+gum log --structured --level info "Installing Gnome extensions"
 
+pipx install gnome-extensions-cli --system-site-packages
 # Install a fork of tiling shell
 wget -O /tmp/tilingshell.zip 'https://github.com/J4KE-B/tilingshell/releases/download/v17.3-dynamic.1/tilingshell@ferrarodomenico.com.zip'
 # Install new extensions
@@ -14,8 +15,6 @@ gext install tophat@fflewddur.github.io
 gext install auto-move-windows@gnome-shell-extensions.gcampax.github.com
 gext install dash-to-dock@micxgx.gmail.com
 
-# Setup tiling shell
-gnome-extensions enable tilingshell@ferrarodomenico.com
 # Compile gsettings schemas
 sudo cp ~/.local/share/gnome-shell/extensions/tilingshell@ferrarodomenico.com/schemas/org.gnome.shell.extensions.tilingshell.gschema.xml \
   /usr/share/glib-2.0/schemas/
@@ -53,6 +52,7 @@ gsettings set org.gnome.shell.extensions.tactile row-1 1
 gsettings set org.gnome.shell.extensions.tactile gap-size 32
 
 # Configure tilingshell
+gnome-extensions enable tilingshell@ferrarodomenico.com
 gsettings set org.gnome.shell.extensions.tilingshell show-indicator false
 
 # Configure Just Perfection

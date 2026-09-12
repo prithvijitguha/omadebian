@@ -2,6 +2,8 @@
 
 set -e
 
+gum log --structured --level info "Installing fonts"
+
 FONT_DIR="$HOME/.local/share/fonts"
 
 mkdir -p "$FONT_DIR"

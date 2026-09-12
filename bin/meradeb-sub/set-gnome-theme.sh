@@ -1,5 +1,7 @@
 #!/bin/bash
 
+gum log --structured --level info "Setting theme $THEME"
+
 gsettings set org.gnome.desktop.interface color-scheme 'prefer-dark'
 gsettings set org.gnome.desktop.interface cursor-theme 'Yaru'
 gsettings set org.gnome.desktop.interface gtk-theme "Yaru-$MERADEB_THEME_COLOR-dark"

@@ -1,5 +1,7 @@
 #!/bin/bash
 
+gum log --structured --level info "Setting gnome dock"
+
 apps=(
   "ghostty"
   "firefox"
