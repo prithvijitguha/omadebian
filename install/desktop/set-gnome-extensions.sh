@@ -4,9 +4,8 @@ gum log --structured --level info "Installing Gnome extensions"
 
 pipx install gnome-extensions-cli --system-site-packages
 # Install a fork of tiling shell
-wget -O /tmp/tilingshell.zip 'https://github.com/J4KE-B/tilingshell/releases/download/v17.3-dynamic.1/tilingshell@ferrarodomenico.com.zip'
 # Install new extensions
-gnome-extensions install --force /tmp/tilingshell.zip
+gext install tilingshell@ferrarodomenico.com
 gext install tactile@lundal.io
 gext install just-perfection-desktop@just-perfection
 gext install blur-my-shell@aunetx
@@ -52,7 +51,6 @@ gsettings set org.gnome.shell.extensions.tactile row-1 1
 gsettings set org.gnome.shell.extensions.tactile gap-size 32
 
 # Configure tilingshell
-gnome-extensions enable tilingshell@ferrarodomenico.com
 gsettings set org.gnome.shell.extensions.tilingshell show-indicator false
 
 # Configure Just Perfection

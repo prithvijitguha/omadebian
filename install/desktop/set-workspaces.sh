@@ -1,7 +1,5 @@
 #!/bin/bash
-set -e
 
-gum log --structured --level info "Setting workspace settings"
 # Fixed number of workspaces
 gsettings set org.gnome.mutter dynamic-workspaces false
 
