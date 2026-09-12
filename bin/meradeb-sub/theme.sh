@@ -110,5 +110,5 @@ EOF
   source "$MERADEB_PATH/bin/meradeb-sub/menu.sh"
 
 elif [ "$THEME" == "<<-back" ]; then
-  break
+  source "$MERADEB_PATH/bin/meradeb-sub/menu.sh"
 fi
